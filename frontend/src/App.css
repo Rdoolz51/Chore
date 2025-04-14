@@ -1,0 +1,136 @@
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+/* App.css */
+
+/* 1) Basic global resets and layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc; /* Light grayish background */
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2) App container and header */
+.app-header {
+    background: #4f46e5; /* A nice purple/blue color */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.app-header h1 {
+    font-size: 1.75rem;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* 3) Panels (New Chore form and Chores list) */
+.panel {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 4) NewChore form styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-chore-btn {
+    margin-top: 0.75rem;
+    padding: 0.6rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-chore-btn:hover {
+    background: #1d4ed8;
+}
+
+/* 5) Chore list and chore item styles */
+.chore-list h2 {
+    margin-bottom: 1.25rem;
+}
+
+.chore-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.chore-item-text {
+    max-width: 70%;
+}
+
+.chore-item-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.chore-item-details {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.chore-complete-btn {
+    background: #10b981;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chore-complete-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.chore-complete-btn:not(:disabled):hover {
+    background: #059669;
+}
+.home-page {
+    display: flex;
+    flex-direction: column;  /* stack them vertically */
+    align-items: center;     /* center horizontally */
+    padding: 1rem;
+    gap: 1rem;               /* spacing between panels */
+    width: 100%;
+    max-width: 800px;        /* limit how wide the content can get */
+    margin: 0 auto;          /* center the container in the page */
+}
+
